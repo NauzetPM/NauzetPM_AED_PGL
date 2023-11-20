@@ -1,0 +1,116 @@
+.inicio{
+
+    margin:auto;
+    width: 50rem;
+    padding: 1rem;
+    background-color: bisque;
+    border: 0.1rem solid #000000;
+}
+
+.inicio input[type=submit]{
+    margin: 0rem 1rem;
+    padding: 0.5rem 1rem;
+    background-color: blanchedalmond;
+    border: 0.1rem solid #000000;
+}
+.inicio input[type=text]{
+    padding: 0.2rem;
+    background-color: blanchedalmond;
+    border: 0.1rem solid #000000;
+}
+.crear{
+
+    margin:auto;
+    width: 50rem;
+    padding: 1rem;
+    background-color: bisque;
+    border: 0.1rem solid #000000;
+}
+
+.crear input[type=text]{
+    margin-left: auto;
+    margin-bottom: 2rem;
+    padding: 0.2rem;
+    background-color: blanchedalmond;
+    border: 0.1rem solid #000000;
+}
+
+.crear input[type=submit]{
+    margin: 0.5rem 0.25rem;
+    padding: 0.5rem 1rem;
+    background-color: blanchedalmond;
+    border: 0.1rem solid #000000;
+}
+
+.borrar{
+    margin:auto;
+    width: 50rem;
+    padding: 1rem;
+    background-color: bisque;
+    border: 0.1rem solid #000000;
+}
+
+.borrar input[type=submit]{
+    margin: 1rem 1rem;
+    padding: 0.5rem 1rem;
+    background-color: blanchedalmond;
+    border: 0.1rem solid #000000;
+}
+.borrar input[type=text]{
+    margin: 1rem 1rem;
+    padding: 0.2rem;
+    background-color: blanchedalmond;
+    border: 0.1rem solid #000000;
+}
+
+.modificar{
+    margin:auto;
+    width: 50rem;
+    padding: 1rem;
+    background-color: bisque;
+    border: 0.1rem solid #000000;
+}
+
+.modificar input[type=text]{
+    margin: 1rem 1rem;
+    padding: 0.2rem;
+    background-color: blanchedalmond;
+    border: 0.1rem solid #000000;
+}
+
+.modificar input[type=submit]{
+    margin: 0.5rem 0.25rem;
+    padding: 0.5rem 1rem;
+    background-color: blanchedalmond;
+    border: 0.1rem solid #000000;
+}
+
+.ver{
+    margin:auto;
+    width: 50rem;
+    padding: 1rem;
+    background-color: bisque;
+    border: 0.1rem solid #000000;
+}
+
+.ver input[type=submit]{
+    margin: 0rem 1rem;
+    padding: 0.5rem 1rem;
+    background-color: blanchedalmond;
+    border: 0.1rem solid #000000;
+}
+.ver input[type=text]{
+    padding: 0.2rem;
+    background-color: blanchedalmond;
+    border: 0.1rem solid #000000;
+}
+
+.lista{
+    border: 0.1rem solid #000000;
+    text-align: center;
+    margin: auto;
+}
+
+body{
+    background-color: beige;
+}

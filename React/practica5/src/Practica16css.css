@@ -1,0 +1,19 @@
+
+.relojes-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+
+  .reloj-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+
+  .reloj-hora {
+    font-size: 24px;
+    color: #333;
+  }
+  
