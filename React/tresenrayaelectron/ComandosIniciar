@@ -1,0 +1,3 @@
+json-server --watch fakeserver/partidas.json --static img
+npm start 
+npm run start-electron

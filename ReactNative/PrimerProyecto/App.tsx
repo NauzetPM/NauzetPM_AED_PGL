@@ -6,7 +6,7 @@
  */
 
 import React, { useState } from 'react';
-import type {PropsWithChildren} from 'react';
+import type { PropsWithChildren } from 'react';
 import {
   Button,
   SafeAreaView,
@@ -42,13 +42,15 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Practica21Primera from './src/screens/Practica21Primera';
 import Practica21Segunda from './src/screens/Practica21Segunda';
 import Practica21Tercera from './src/screens/Practica21Tercera';
+import Practica23_1 from './src/hooks/Practica23_1';
+import Practica23_2 from './src/hooks/Practica23_2';
 
 
 type SectionProps = PropsWithChildren<{
   title: string;
 }>;
 
-function Section({children, title}: SectionProps): JSX.Element {
+function Section({ children, title }: SectionProps): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
   return (
     <View style={styles.sectionContainer}>
@@ -73,40 +75,40 @@ function Section({children, title}: SectionProps): JSX.Element {
     </View>
   );
 }
-export type RootStackParamList={
-  Perros:undefined;
-  Gatos:undefined;
-  Dog:undefined;
-  Cat:{nombre:string};
-  Tercera:{nombre:string};
-  Primera: {nombre:string};
-  Segunda:undefined;
-
+export type RootStackParamList = {
+  Perros: undefined;
+  Gatos: undefined;
+  Dog: undefined;
+  Cat: { nombre: string };
+  Tercera: { nombre: string };
+  Primera: { nombre: string };
+  Segunda: undefined;
+  Practica23_2: { id: number }
+  Practica23_1: undefined;
 }
 //Practica 20
-function HomeScreen(){
-  return(
-    <SafeAreaView style={{flex:1}}>
-      <View style={{flex:1,alignItems:"center",justifyContent:"center"}}>
+function HomeScreen() {
+  return (
+    <SafeAreaView style={{ flex: 1 }}>
+      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
         <Text>Home Screen</Text>
       </View>
     </SafeAreaView>
   );
 }
 
-const Stack=createNativeStackNavigator<RootStackParamList>();
+const Stack = createNativeStackNavigator<RootStackParamList>();
 function App(): JSX.Element {
-  return(    
-  <NavigationContainer>
-    <Stack.Navigator>
-    {/* se ponen todas las screen que queramos el navigation */}
-    <Stack.Screen name="Primera" component={Practica21Primera} />
-    <Stack.Screen name="Segunda" component={Practica21Segunda} />
-    <Stack.Screen name="Tercera" component={Practica21Tercera} />
-    </Stack.Navigator>
-</NavigationContainer>
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        {/* se ponen todas las screen que queramos el navigation */}
+        <Stack.Screen name="Practica23_1" component={Practica23_1} />
+        <Stack.Screen name="Practica23_2" component={Practica23_2} />
+      </Stack.Navigator>
+    </NavigationContainer>
 
-    );
+  );
 }
 
 /*const [contador,setcontador]=useState(0);

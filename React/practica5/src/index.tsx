@@ -31,12 +31,13 @@ import Practica42 from './PokemonController';
 import ProvinciaCardList from './ProvinciaCardList';
 import ProvinciaController from './ProvinciaController';
 import PokemonController from './PokemonController';
+import TresEnRaya from './TresEnRayaPruebas';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
 
-    <PokemonController/>
+    <TresEnRaya/>
 
 );
 
