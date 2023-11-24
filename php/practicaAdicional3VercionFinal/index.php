@@ -1,14 +1,3 @@
-<form action="prueba.php" method="POST">
-
-<?php
-    require_once("array_nombres.php");
-    echo "<input type='text' name=\"entrevistado\" id=\"entrevistado\" placeholder=\"Encuestado\"><br>";
-    foreach ($array_nombres as $key => $nombre) {
-        echo $key;
-        echo "<input type=\"text\" name=\"$key\"  placeholder=\"$nombre\"/><br>";
-        
-    }
-    echo "<input type=\"submit\" value=\"enviar\" placeholder=\"enviar\"/><br>";
-?>
-
-</form>
+version https://git-lfs.github.com/spec/v1
+oid sha256:223e194d24cfe26d44b60060b35e8c2440aaf9e2b5a9b1965675a38bcf4d9e31
+size 450

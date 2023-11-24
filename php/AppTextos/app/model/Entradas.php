@@ -1,29 +1,3 @@
-<?php
-    class Entradas{
-        public $autor;
-        public $titulo;
-        public $contenido;
-        public $fecha;
-
-        public function __construct(string $autor, string $titulo, 
-        string $contenido, string $fecha){
-            $this->autor = $autor;
-            $this->titulo = $titulo;
-            $this->contenido = $contenido;
-            $this->fecha = $fecha;
-        }
-
-        public function __toString():string{
-            return 
-             "Autor: " . $this->autor . "; " 
-            . "Titulo: " . $this->titulo . "; " 
-            . "contenido: " . $this->contenido . "; " 
-            . "Fecha: " . $this->fecha
-            ;
-        }
-
-   
-
-    }
-
-?>
+version https://git-lfs.github.com/spec/v1
+oid sha256:48d491d96f3c055c010782f848166f7c993ff40cb4e3e3af6606d8071e0332bd
+size 689

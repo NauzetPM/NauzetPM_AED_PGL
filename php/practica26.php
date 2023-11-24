@@ -1,13 +1,3 @@
-<?php
-function cmp($a, $b){
-   /* if ($a == $b) {
-        return 0;
-    }
-    return ($a < $b) ? -1 : 1;*/
-    return $a <=> $b;
-}
-$a = array(3, 2, 5, 6, 1);
-usort($a, "cmp");
-foreach ($a as $valor) {
-    echo " $valor, ";
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5100976d36d98bfa4cc2efb510465b9d9836af2b33eeffdc960b08dc49d386b8
+size 225

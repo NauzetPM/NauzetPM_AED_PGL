@@ -1,7 +1,3 @@
-<?php
-$arr= ["1","2","3","4"];
-$va = array_pop($arr);
-echo "el array ahora queda: <br>";
-print_r($arr);
-echo "<br>el valor extraido es: " . $va;//devulve 4
-?>
+version https://git-lfs.github.com/spec/v1
+oid sha256:ae301fa564cfdd7cc903667a272b264308bfa307590b67911586324ecfa9659e
+size 158

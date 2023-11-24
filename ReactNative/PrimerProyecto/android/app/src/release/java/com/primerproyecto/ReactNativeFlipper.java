@@ -1,20 +1,3 @@
-/**
- * Copyright (c) Meta Platforms, Inc. and affiliates.
- *
- * <p>This source code is licensed under the MIT license found in the LICENSE file in the root
- * directory of this source tree.
- */
-package com.primerproyecto;
-
-import android.content.Context;
-import com.facebook.react.ReactInstanceManager;
-
-/**
- * Class responsible of loading Flipper inside your React Native application. This is the release
- * flavor of it so it's empty as we don't want to load Flipper.
- */
-public class ReactNativeFlipper {
-  public static void initializeFlipper(Context context, ReactInstanceManager reactInstanceManager) {
-    // Do nothing as we don't want to initialize Flipper on Release.
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0085c5285a11254ecd40be2d281cd0ca0e0103cb4e6c9bf2eb1b37a33bc9700d
+size 684

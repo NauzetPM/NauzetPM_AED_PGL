@@ -1,31 +1,3 @@
-import { Button, GestureResponderEvent, StyleSheet, Text, View } from 'react-native'
-import React, { useState } from 'react'
-
-type Props = {
-    nombre:string,
-    color:string
-}
-
-const Circulo= (props: Props) => {
-    const [flexCount, setflexCount] = useState(1);
-    
-
-  return (
-    <View style={{...styles.caja,flex:flexCount,backgroundColor:props.color}}>
-      <Text>{props.nombre}</Text>
-    </View>
-  )
-}
-
-export default Circulo
-
-const styles = StyleSheet.create({
-    caja:{
-        backgroundColor: "yellow",
-        borderColor: "black",
-        borderRadius:50,
-        height:100,
-        width:100,
-        margin:5,
-    }
-})
+version https://git-lfs.github.com/spec/v1
+oid sha256:92d6dc9178f25337aed599b4cb35c1ed3743a44a5742e710bfbae164e0773e43
+size 640

@@ -1,11 +1,3 @@
-<?php
-$mivar=[];
-$mivar[0]="uno";
-//echo $mivar[0];
-$arr1=$mivar;
-$arr2=&$mivar;
-$arr1[0] = "una variación"; $arr2[0] =
-"variando array2 ";
-echo "mivar = $mivar[0] <br>";
-echo "arr1 = $arr1[0]";
-?>
+version https://git-lfs.github.com/spec/v1
+oid sha256:2266f2078e0d440a82749df2a5f10149d27da30e4f70ae72f5a9906e390e3e69
+size 198

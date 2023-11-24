@@ -1,3 +1,3 @@
-json-server --watch fakeserver/partidas.json --static img
-npm start 
-npm run start-electron
+version https://git-lfs.github.com/spec/v1
+oid sha256:18b803df057f59560c03bdecf57b7596771fbc99a64c1ed97a74babddd04bd15
+size 92

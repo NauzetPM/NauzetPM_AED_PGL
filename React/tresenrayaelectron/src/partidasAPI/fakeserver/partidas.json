@@ -1,24 +1,3 @@
-{
-  "partidas": [
-    {
-      "id": 1,
-      "nombre": "prueba",
-      "ganador": "empate"
-    },
-    {
-      "id": 2,
-      "nombre": "Nau",
-      "ganador": "Ganador: Nau"
-    },
-    {
-      "id": 3,
-      "nombre": "Jugador",
-      "ganador": "Ganador: Jugador"
-    },
-    {
-      "id": 4,
-      "nombre": "Jugador",
-      "ganador": "Ganador: Ordenador(IA)"
-    }
-  ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f02c633694a99ab1479e8a9d47689e4ddc05479d4175f0be847a03e2f5e497fa
+size 373

@@ -1,18 +1,3 @@
-<?php
-    $array_nombres=[
-        "id01" => "Joel",
-        "id02" => "Moises",
-        "id03" => "Julio",
-        "id04" => "Owen",
-        "id05" => "Patricia",
-        "id06" => "Ruben",
-        "id07" => "Nathan",
-        "id08" => "Saul",
-        "id09" => "Juanma",
-        "id10" => "Javier",
-        "id11" => "Cristian",
-        "id12" => "Alberto",
-        "id13" => "Angel",
-        "id14" => "Nauzet"
-    ];
-?>
+version https://git-lfs.github.com/spec/v1
+oid sha256:b0cc81315e56d46f241b7e4a5f2e707e534b28c29c50e92fc85fad7b44958186
+size 423
