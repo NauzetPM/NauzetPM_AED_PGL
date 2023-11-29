@@ -1,22 +1,3 @@
-import React, { useState } from 'react'
-import Practica9 from './Practica9'
-type Props = {}
-
-const Practica14 = () => { 
-    let arr:Array<number>=[2,3,4,5,6,7,8,9,10];
-    const mensajeTabla="tabla del = ";
-
-    return (
-        <div>
-          <h1>Tablas del 2 al 10</h1>
-            {arr.map((tabla, index) => (
-                <><h3>tabla del {tabla}</h3>
-                <Practica9 TablaDel={tabla} />
-                
-                </>
-            ))}
-        </div>
-      )
-}
-
-export default Practica14
+version https://git-lfs.github.com/spec/v1
+oid sha256:5630aa4d1982d9298044ae5b1dd742c08e9a4d60265fd325f9ad2484a80562d3
+size 532

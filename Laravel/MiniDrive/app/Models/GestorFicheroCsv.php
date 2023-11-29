@@ -1,31 +1,3 @@
-<?php
-
-namespace App\Models;
-
-use Illuminate\Http\Request;
-
-class GestorFicheroCsv 
-{
-    function leerFichero(string $nombrefichero){
-        $contenido=[];
-        if (($open = fopen(storage_path() . "/".$nombrefichero, "r")) !== FALSE) {
-        while (($data = fgetcsv($open, 1000, ",")) !== FALSE) {
-        $contenido[] = $data;
-        }
-        fclose($open);
-        return $contenido;
-        }
-        return null;
-        }
-        function agregar($nombreArchivo, $data) {
-            $rutaArchivo = storage_path() . "/" . $nombreArchivo;
-
-            if (($file = fopen($rutaArchivo, "a")) !== FALSE) {
-                fputcsv($file, $data);
-                fclose($file);
-                return true;
-            }
-
-            return false;
-        }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:747601c75fc315b253f00d111948e8f3138218d5ebe72ef2491066d41837e656
+size 769

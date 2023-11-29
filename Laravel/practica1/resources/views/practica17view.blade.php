@@ -1,20 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Crear Directorio</title>
-</head>
-<body>
-    @if(session('success'))
-        <div class="alert alert-success">
-            {{ session('success') }}
-        </div>
-    @endif
-
-    <form method="POST" action="/practica17p">
-        @csrf
-        <label for="nombre">Nombre del Directorio:</label>
-        <input type="text" name="nombre" required>
-        <button type="submit">Crear Directorio</button>
-    </form>
-</body>
-</html>
+version https://git-lfs.github.com/spec/v1
+oid sha256:6b93876e4ce89342ade9002e92af2d73309eaf7918cb01095dca5633d8bff8f6
+size 470

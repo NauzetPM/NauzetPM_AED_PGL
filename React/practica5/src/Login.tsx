@@ -1,25 +1,3 @@
-import React, { useState } from "react";
-import { useAppContext } from "./LoginContext";
-
-
-const Login = ({ }) => {
-    const {stateNombre,setstateNombre}=useAppContext();
-
-  const handleLogin = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    let formulario = event.currentTarget;
-    let inputnombre = formulario.nombre;
-    let nombre = inputnombre.value;
-    setstateNombre(nombre);
-  };
-
-  return (  
-            <form onSubmit={handleLogin}>
-                Nombre: <input type="text" id="nombre" /> <br />
-                <button type="submit">Login </button>
-            </form>
-  );
-};
-
-export default Login;
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:9c88c24862c395bb6621d492989226652d41fccbe37e7d56c45a258bf7f3f110
+size 649

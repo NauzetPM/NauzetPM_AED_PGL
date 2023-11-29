@@ -1,4 +1,3 @@
--------------------------------------------------------------------------------
-Test set: es.iespuertodelacruz.npm.instituto.repository.AlumnoRepositoryTest
--------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.538 s -- in es.iespuertodelacruz.npm.instituto.repository.AlumnoRepositoryTest
+version https://git-lfs.github.com/spec/v1
+oid sha256:2b928cfe80ffe42a7a648bafd796285b2a9cf5240bb331c887c28078b40bc1dc
+size 386

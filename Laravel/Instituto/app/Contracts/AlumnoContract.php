@@ -1,10 +1,3 @@
-<?php
-namespace App\Contracts;
-class AlumnoContract{
-public const TABLE_NAME="alumnos";
-public const COL_DNI="dni";
-public const COL_NOMBRE="nombre";
-public const COL_APELLIDOS="apellidos";
-public const COL_FECHANACIMIENTO="fechanacimiento";
-}
-?>
+version https://git-lfs.github.com/spec/v1
+oid sha256:24f0a310c0b7f93727b172b823793eec8bea2c74b69b53466e730be657d339bf
+size 247

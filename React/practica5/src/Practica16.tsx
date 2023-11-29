@@ -1,23 +1,3 @@
-import React from 'react';
-import Reloj from './Reloj'; 
-import './Practica16css';
-
-const zonasHorarias = [
-    { nombre: 'Londres', zona: 'Europe/London' },
-    { nombre: 'Madrid', zona: 'Europe/Madrid' },
-    { nombre: 'Nueva York', zona: 'America/New_York' },
-    { nombre: 'Tokio', zona: 'Asia/Tokyo' },
-    { nombre: 'Sídney', zona: 'Australia/Sydney' },
-  ];
-
-const Practica16 = () => {
-  return (
-    <div className="relojes-container">
-      {zonasHorarias.map((zona, index) => (
-        <Reloj key={index} zona={zona.zona} />
-      ))}
-    </div>
-  );
-};
-
-export default Practica16;
+version https://git-lfs.github.com/spec/v1
+oid sha256:aa3cc42d178354c635235a2463db6875f54e6da17c8a72e133d1e6e9791e0a91
+size 614

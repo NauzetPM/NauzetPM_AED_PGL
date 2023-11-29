@@ -1,24 +1,3 @@
-<?php
-
-namespace Database\Seeders;
-
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use Illuminate\Database\Seeder;
-
-class DatabaseSeeder extends Seeder
-{
-    /**
-     * Seed the application's database.
-     *
-     * @return void
-     */
-    public function run()
-    {
-        // \App\Models\User::factory(10)->create();
-
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4907fdf95b3625f0d14881faa4f35feb854a0e86d79f5d874e81202006bb2b4e
+size 492

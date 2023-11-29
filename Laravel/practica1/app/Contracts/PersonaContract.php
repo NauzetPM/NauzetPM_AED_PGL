@@ -1,9 +1,3 @@
-<?php
-namespace App\Contracts;
-class PersonaContract{
-public const TABLE_NAME="personas";
-public const COL_ID="id";
-public const COL_NOMBRE="nombre";
-public const COL_EDAD="edad";
-}
-?>
+version https://git-lfs.github.com/spec/v1
+oid sha256:a7d1dd56daa80192f8e3a1de9dcbdb8963757fa292be650ce5ab2aca1a74fd57
+size 185

@@ -1,9 +1,3 @@
-<?php
-namespace App\Contracts;
-class MatriculaContract{
-public const TABLE_NAME="matriculas";
-public const COL_ID="id";
-public const COL_DNI="dni";
-public const COL_YEAR="year";
-}
-?>
+version https://git-lfs.github.com/spec/v1
+oid sha256:0be2bdfc7de7ccb3bca1b9bc55e471a993a85ebc5260b76b21b5d34120c438f8
+size 183

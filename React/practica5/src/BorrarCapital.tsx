@@ -1,29 +1,3 @@
-import React, { useState } from 'react';
-import axios from 'axios';
-
-export default function BorrarCapital() {
-  const [id, setId] = useState('');
-
-  const handleBorrarCapital = async () => {
-    try {
-
-      const capitalId = id;
-      const response = await axios.delete(`http://localhost:3000/capitales/${capitalId}`);
-      console.log(response.data);
-    } catch (error) {
-      console.error('Error al borrar el capital:', error);
-    }
-  }
-
-  return (
-    <div>
-      <input
-        type="text"
-        placeholder="ID del capital a borrar"
-        value={id}
-        onChange={(e) => setId(e.target.value)}
-      />
-      <button onClick={handleBorrarCapital}>Borrar Capital</button>
-    </div>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0e11f6179b2ed05db91b71b8a95dee342f43ffc16f05548f38862a7f5de38985
+size 739

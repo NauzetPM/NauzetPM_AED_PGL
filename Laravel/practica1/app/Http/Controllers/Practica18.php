@@ -1,24 +1,3 @@
-<?php
-
-namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
-
-class Practica18 extends Controller
-{
-    public function agregarDatosAlCsv()
-    {
-        $gf = new GestorFicheroCsv;
-        $arrayDatos=["nombre","gmail"];
-        $gf->agregar("Practica18CSV.csv",$arrayDatos);
-    }
-
-    public function leerDatos()
-    {   
-        $this->agregarDatosAlCsv();
-        $gf = new GestorFicheroCsv;
-        $arrayDatos=$gf->leerFichero("Practica18CSV.csv");
-        return view('practica18view', compact('arrayDatos'));
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:bbcd2a7878f38bc54e38f8a8998c582c516338ee2ee92bf85d4af26a6e0a669e
+size 574

@@ -1,28 +1,3 @@
-import React, { useEffect, useRef, useState } from 'react'
-
-type Props = {}
-const inputtexto = useRef<HTMLInputElement>({} as HTMLInputElement);
-const divtexto = useRef<HTMLDivElement>({} as HTMLDivElement);
-const Practica28 = (props: Props) => {
-    useEffect(()=>{
-        const timerID=setInterval(
-            escribir,
-            1000
-        );
-    },[])
-    function escribir(): void {
-        let htmlinputtexto=inputtexto.current;
-        let texto=htmlinputtexto.value;
-        let htmldivtexto=divtexto.current;
-        htmldivtexto.innerHTML=texto;
-    }
-
-  return (
-    <>
-    <input type="text" ref={inputtexto} />
-    <div ref={divtexto}></div>
-    </>
-  )
-}
-
-export default Practica28
+version https://git-lfs.github.com/spec/v1
+oid sha256:69c88924fde3f6f9ad0f567ab6d4bf27eea8b762870608508b213a2226b657c1
+size 728

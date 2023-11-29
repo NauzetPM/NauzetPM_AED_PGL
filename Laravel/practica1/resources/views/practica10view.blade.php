@@ -1,28 +1,3 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
-
-    </head>
-    <body>
-        <ul>
-
-        Numeros menores de 50
-        @foreach ($numeros as $numero)
-        @if($numero<=50)
-        <li>{{$numero}}</li>
-        @endif
-        @endforeach
-        Numeros mayores de 50
-        @foreach ($numeros as $numero)
-        @if($numero>50)
-        <li>{{$numero}}</li>
-        @endif
-        @endforeach
-        </ul>
-
-    </body>
-</html>
+version https://git-lfs.github.com/spec/v1
+oid sha256:a1a74d469d4570ec14e2ca37e1c9e96804861d9587653171803299fc544bdad0
+size 572
