@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0d1fdcc03497871d5255a7f54d0862832b3b36927f4d5479955116c1f9e8cbc7
-size 986
+import React, { useState } from "react";
+type Props = {}
+type Player={
+    life: number,
+    name: string,
+    lvl:number
+}
+const Practica8 = (props: Props) => {
+    const [contador, incrementar] = useState(0);
+    const [textoState, modificarTextoState] = useState("Este es mi primer texto");
+    const [playerState,setPlayerState]=useState({} as Player);
+    return (
+        <>
+            <p>Has hecho click {contador} veces</p>
+            <p> texto {textoState} </p>
+            <p>{JSON.stringify(playerState,null,3)}</p>
+            <button onClick={() => {
+                incrementar(contador + 1);
+                modificarTextoState("otro texto: "+Math.random());
+
+                let NuevoStatePlayer: Player={
+                        ...playerState,
+                        life:Math.random()
+                }
+                setPlayerState(NuevoStatePlayer);
+            }}>
+                Haz click!
+            </button>
+        </>
+    );
+}
+export default Practica8;

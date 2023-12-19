@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2eabcf0508ce8e3072a58c1792f5f3909407afcd2212dc9c4a9c482f2447c8b1
-size 791
+<?php
+    class Articulo{
+        public $id;
+        public $nombre;
+        public $categoria;
+        public $cantidad;
+        public $precio;
+
+        public function __construct(int $id,string $nombre, string $categoria, 
+        int $cantidad, float $precio){
+            $this->id = $id;
+            $this->nombre = $nombre;
+            $this->categoria = $categoria;
+            $this->cantidad = $cantidad;
+            $this->precio = $precio;
+        }
+
+        public function __toString():string{
+            return "ID: ".$this->id . "; " 
+            . "Nombre: " . $this->nombre . "; " 
+            . "Categoria: " . $this->categoria . "; " 
+            . "Cantidad: " . $this->cantidad . "; " 
+            . "Precio: " . $this->precio
+            ;
+        }
+
+   
+
+    }
+
+?>

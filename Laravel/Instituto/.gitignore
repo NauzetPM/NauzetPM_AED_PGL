@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:869d824dd07a60e95c5fb1c592d32c0d5718ec608a7060c0f84b11852f57a60d
-size 227
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.env.production
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+auth.json
+npm-debug.log
+yarn-error.log
+/.fleet
+/.idea
+/.vscode

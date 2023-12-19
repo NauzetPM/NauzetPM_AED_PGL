@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:047a9a93381b818073a8092e2106ec774de87fb3b315a3fe0ed1a2c0860f0afc
-size 296
+<?php
+$array=[];
+for ($i=1; $i <= 10; $i++) { 
+$array[]=$i;
+print_r($array);
+echo "<br>";
+
+}
+echo "<br>ahora los pop<br><br>";
+for ($i=1; $i <= 5; $i++) { 
+    $va = array_pop($array);
+    echo "el array ahora queda: <br>";
+    print_r($array);
+    echo "<br>el valor extraido es: " . $va;
+}
+
+
+?>

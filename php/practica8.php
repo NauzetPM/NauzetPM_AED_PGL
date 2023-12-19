@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:27db062e4b9c12ac2c4dbe0859e6917393ea30f858f8ee47bac17757c3a8d61b
-size 185
+<?php
+$unavar = 1.3;
+var_dump($unavar);
+echo "<br>";
+$unavar = (int) $unavar;
+var_dump($unavar);
+/*
+Antes del cast te devulve un float(1.3)
+Despues del cast te devuelve un int(1)
+*/ 
+?>

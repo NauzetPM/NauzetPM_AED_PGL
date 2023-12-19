@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b7527076ebf8d54c22c612697e8eda7a1f100bda1ea21b3fad8f570b4a49229c
-size 324
+import React from 'react'
+
+const Practica7 = () => {
+    let contador=0;
+    const mostrarHora=()=>{
+        //alert(new Date());
+        contador++
+    }
+  return (
+    <div>
+        <h1>La hora es:</h1>
+      <button onClick={mostrarHora}>Pulsar</button>
+      <p>{contador}</p>
+    </div>
+  )
+}
+
+export default Practica7

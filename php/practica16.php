@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:27c715efa7d49bc663e381cadcc17172a05085b82c1f6bcfb275e055043c29cd
-size 319
+<?php
+
+/*//Codigo original
+$array = array('perro', 'gato', 'avestruz');
+foreach ($array as $key => $val) {
+print "<br>array[ $key ] = $val";
+}*/
+
+$array = array('perro', 'gato', 'avestruz');
+foreach ($array as $llave => $valor) {
+print "<br>array[ $llave ] = $valor <br>";
+}
+print_r($array);
+//No da ningun problema 
+?>

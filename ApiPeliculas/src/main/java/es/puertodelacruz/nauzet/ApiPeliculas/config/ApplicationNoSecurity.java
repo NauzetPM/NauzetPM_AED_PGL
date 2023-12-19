@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:717fb0a863c02af7432ed9164db6bdce024e1ff3471f21f1119d72e6205d596c
-size 435
+package es.puertodelacruz.nauzet.ApiPeliculas.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityCustomizer;
+@Configuration
+public class ApplicationNoSecurity {
+@Bean
+public WebSecurityCustomizer webSecurityCustomizer() {
+return (web) -> web.ignoring()
+.requestMatchers("/**");
+}
+}

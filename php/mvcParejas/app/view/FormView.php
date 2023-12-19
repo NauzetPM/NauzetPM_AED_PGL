@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb548eaf0d02ba7a52aa47e5f4a3b9a3341122cbf8f4f6a1d2a0dace3574a131
-size 1139
+<?php
+class FormView{
+    private static function cabecera(){
+        return '            
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            
+        </head>
+        <body>';
+        }
+    
+    private static function pie(){
+        return '
+        </body>
+        </html>            
+        ';
+    }
+
+        public static function crearForm(){
+            echo FormView::cabecera();
+            echo '<form action="app/controller/EmparejarController.php" method="POST">';
+
+        require_once("app/model/array_nombres.php");
+        echo '<input type="text" name="entrevistado" id="entrevistado" placeholder="Encuestado"><br>';
+        foreach ($array_nombres as $key => $nombre) {
+            echo $key;
+            echo "<input type=\"text\" name=\"$key\"  placeholder=\"$nombre\"/><br>";
+            
+        }
+        echo '<input type="submit" value="enviar" placeholder="enviar"/><br></form>';
+    
+            echo FormView::pie();
+        }
+}
+
+?>

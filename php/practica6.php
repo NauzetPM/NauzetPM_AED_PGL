@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e8e2b927bbc51b13ca573c8e26ff141742020217161685e83540072eb8c36bd5
-size 106
+<?php
+var_dump($_SERVER) ;//te da un tocho de info
+echo "<br> $_SERVER[PHP_SELF]" // te da la direccion
+?>

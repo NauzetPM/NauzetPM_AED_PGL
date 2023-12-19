@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5d95b09a1d8d8117818883ffcf1f012b5653366f242b5de58d11d4163455375f
-size 578
+
+
+
+<form action="practicaAdicional3.php" method="POST">
+
+<?php
+    $array=["Joel","Moises","Julio","Owen","Patricia","Ruben","Nathan","Saul","Juanma","Javier","Cristian","Alberto","Angel","Nauzet"];
+    foreach ($array as $nombre) {
+        echo "<input type=\"text\" name=\"$nombre\" placeholder=\"$nombre\"/><br>";
+    }
+    
+    echo "<input type=\"submit\" value=\"enviar\" placeholder=\"enviar\"/><br>";
+    //condicion 
+    if($_SERVER["REQUEST_METHOD"]== "POST"){
+    foreach ($array as $nombre) {
+        echo "$nombre afinidad: $_POST[$nombre]";
+    }
+    }
+?>
+</form>

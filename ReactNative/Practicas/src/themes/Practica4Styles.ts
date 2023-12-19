@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9b7bbca5d9f0c3000a2ef3afe6028486604b1542820688b55b8b01d67e245c15
-size 384
+import React from "react";
+import { StyleSheet } from "react-native";
+
+const practica04styles = StyleSheet.create({
+    principal:{
+      flex: 1,
+      margin:5,
+      padding:10,
+      backgroundColor: "lightblue",
+      
+    },
+    secundario:{
+      flex:1,
+      borderColor: "black",
+      borderWidth:2,
+      justifyContent: "center",
+    }
+})
+export default practica04styles;

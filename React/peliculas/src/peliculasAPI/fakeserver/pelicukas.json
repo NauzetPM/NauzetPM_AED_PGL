@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f9dc32755f52a81983867e5eb712e5bed1ea594d3d3172fbfcb6ea03bfb10123
-size 243
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

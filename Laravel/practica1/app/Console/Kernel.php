@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e8c92e1bb36510f8a59c5cfff6645d09fec070c6905d5a28039ccb52e7c033e8
-size 681
+<?php
+
+namespace App\Console;
+
+use Illuminate\Console\Scheduling\Schedule;
+use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
+
+class Kernel extends ConsoleKernel
+{
+    /**
+     * Define the application's command schedule.
+     *
+     * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
+     * @return void
+     */
+    protected function schedule(Schedule $schedule)
+    {
+        // $schedule->command('inspire')->hourly();
+    }
+
+    /**
+     * Register the commands for the application.
+     *
+     * @return void
+     */
+    protected function commands()
+    {
+        $this->load(__DIR__.'/Commands');
+
+        require base_path('routes/console.php');
+    }
+}

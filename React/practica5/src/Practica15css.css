@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f924ea74c6546fcb06c7fe4ceff083d54565fe008c6a6e326048b82f5c8e5c1f
-size 205
+.green-text {
+    color: green;
+  }
+  
+  .blue-text {
+    color: blue;
+  }
+  
+  .red-text {
+    color: red;
+  }
+  
+  .pink-text {
+    color: pink;
+  }
+  .black-text {
+    color: black;
+  }

@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:79f13131fd6cfff9a1b2ded236c9e02f6ae87f4196144135a3b49ea7af22caae
-size 578
+import React from 'react';
+import { View } from 'react-native';
+import { WebView } from 'react-native-webview';
+
+interface ArticleViewProps {
+  route?: { params: { article: FeedItem } };
+}
+
+interface FeedItem {
+  id: string;
+  title: string;
+  description?: string; 
+}
+
+const Practica31View: React.FC<ArticleViewProps> = ({ route }) => {
+  const { article } = route?.params || {};
+
+  const htmlContent = article?.description || '';
+
+  return (
+    <View style={{ flex: 1 }}>
+      <WebView source={{ html: htmlContent }} />
+    </View>
+  );
+};
+
+export default Practica31View;
+
+

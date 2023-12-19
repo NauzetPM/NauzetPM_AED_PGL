@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:63315f4e2fc848f91fe7c6f6f24c0bc2ce8be33a19345d39b12c32cb3571509e
-size 471
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ver Archivo CSV</title>
+</head>
+<body>
+    <h1>Contenido del Archivo CSV</h1>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Correo</th>
+        </tr>
+        @foreach($arrayDatos as $subArray)
+            <tr>
+                @foreach($subArray as $data)
+                    <td>{{ $data }}</td>
+                @endforeach
+            </tr>
+        @endforeach
+    </table>
+</body>
+</html>

@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e2582657228342256cd544fbdcaaf54221f3a05eb91f4e02bfbb366662811d8c
-size 484
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Laravel</title>
+
+    </head>
+
+    <body>
+        <form action="/Practica13_2">
+            <label htmlFor="texto">Color:</label>
+            <input
+              type="text"
+              name="color"
+              id="color"/>
+            <button type="submit">Enviar</button>
+          </form>
+    </body>
+</html>

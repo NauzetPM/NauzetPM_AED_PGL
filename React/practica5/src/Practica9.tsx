@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6cd8c2fb33bb60db4bff5ba8ac7e8e136559d8370a978f0ed1e444574e687f59
-size 491
+import React, { useState } from 'react'
+type Props={
+  TablaDel:number;
+}
+const Practica9 = (props:Props) => {
+  const [contador, incrementar] = useState(1);
+  const TablaDel=props.TablaDel;
+  function calculartabla(){
+      incrementar(contador + 1);
+      if (contador > 9) {
+        incrementar(1);
+      }
+  }
+
+  return (
+    <div>
+      <p>{TablaDel}*{contador}={TablaDel * contador} </p>
+      <button onClick={calculartabla}>Pulsar</button>
+    </div>
+  )
+}
+
+export default Practica9

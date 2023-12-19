@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a9cf3ec4073a281ec700d1a9b2b12886d3fe99454e9aa0e03c189f94c48cafc6
-size 439
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Laravel</title>
+
+    </head>
+    <body>
+    
+    
+    @php
+    for ($i = 0; $i < 3; $i++) {
+        $dato = time();
+        echo "Desde el 1-01-1970 han pasado: $dato segundos";
+        sleep(1); // Espera 1 segundo
+        echo "<br>";
+    }
+@endphp
+    </body>
+</html>

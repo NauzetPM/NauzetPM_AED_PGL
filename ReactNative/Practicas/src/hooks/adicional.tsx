@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2fce528c827c4a26a503f463c7b22313c83696f068beb9b336ac994ca1f72fae
-size 502
+import React, { useState } from 'react'
+
+export type FormData = {
+    jubilado:boolean,
+    casado: boolean,
+    edad:number,
+    nombre:string
+}
+
+const adicional = () => {
+    const [formdata,setformdata]=useState<FormData>({}as FormData);
+    function fillFormData(value:boolean|number|string,field:keyof FormData){
+        setformdata({
+            ...formdata,
+            [field]:value
+        }
+        );
+    }
+    return{
+        formdata,
+        fillFormData
+    }
+}
+
+export default adicional

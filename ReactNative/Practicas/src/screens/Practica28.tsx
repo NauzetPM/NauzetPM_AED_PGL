@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:092021ce95908cf0fc8eb7446d04d2ddb39aaa7e67c51e7cf3939db47224140d
-size 615
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import ListaPokemon from '../navigations/ListaPokemon';
+import BuscarPokemon from '../navigations/BuscarPokemon';
+const Tab = createBottomTabNavigator();
+const Practica28 = () => {
+  return (
+    <NavigationContainer>
+      <Tab.Navigator>
+        <Tab.Screen name="Lista" component={ListaPokemon} />
+        <Tab.Screen name="Buscar" component={BuscarPokemon} />
+      </Tab.Navigator>
+    </NavigationContainer>
+  );
+};
+
+export default Practica28;

@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5dc32ccb010ab98bbb07b9c9c4afb57f76fb023e8cade28cf19b83348306e334
-size 961
+import React from 'react'
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+
+type Props = {
+  parametro: string,
+  setParametro: Function,
+  numWidth?: number,
+  colorBackgraund?:string,
+  colorLetra?:string,
+}
+
+const Boton = (props: Props) => {
+  return (
+    <TouchableOpacity onPress={() => props.setParametro(props.parametro)}>
+      <View style={{...styles.buttonContainer,width:props.numWidth,backgroundColor:props.colorBackgraund}}>
+        <Text style={{...styles.buttonText,color:props.colorLetra}}>{props.parametro}</Text>
+      </View>
+    </TouchableOpacity>
+  )
+}
+
+const styles = StyleSheet.create({
+  buttonContainer: {
+    backgroundColor: 'blue',
+    paddingVertical: 25,
+    paddingHorizontal: 35,
+    borderRadius: 50,
+    borderColor: 'black',
+    borderWidth: 1,
+    marginRight:10,
+  },
+  buttonText: {
+    color: 'white',
+    textAlign: 'center',
+    fontSize: 16,
+    fontWeight:"bold",
+  },
+});
+export default Boton

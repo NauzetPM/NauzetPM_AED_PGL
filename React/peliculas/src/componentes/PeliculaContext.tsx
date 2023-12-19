@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5b52ee4c9b8c2f797df7f536a9eb4cbe80bcbf5f3463630ffbc0725d70f7460f
-size 996
+import { Dispatch, ReactNode, SetStateAction, createContext, useContext, useState } from "react";
+import { PeliculaCardProps } from "./PeliculasCard";
+
+export interface AppContextType {
+    peliculasfav: PeliculaCardProps[];
+    marcarfav: (pelicula:PeliculaCardProps[])=>void;
+}
+export const AppContext = createContext<AppContextType>({
+    peliculasfav: [],
+    marcarfav: () => {}, // Provide a default function
+  });
+
+export const PeliculaContext = (props: {children:ReactNode}) => {
+    const [peliculasfav, setpeliculasfav] = useState<PeliculaCardProps[]>([]);
+    /*const marcarfav=(pelicula:PeliculaCardProps[])=>{
+        setpeliculasfav(pelicula);
+    };*/
+    const contextValues: AppContextType = {
+        peliculasfav: peliculasfav,
+        marcarfav: setpeliculasfav
+    };
+    //{peliculasfav,marcarfav}
+    return (
+        <AppContext.Provider value={contextValues}>
+            {props.children}
+        </AppContext.Provider>
+    );
+
+}
+export const useAppContext = () => {
+    return useContext(AppContext);
+}
+
+  

@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:05c18778807abfe0fc47f9c7341d82fd3895e11f93d4c96025e85698882ed86f
-size 305
+<?php
+
+namespace App\Models;
+
+class Matricula
+{
+    public $id;
+    public $dni;
+    public $year;
+    public $asignaturas;
+
+    public function __construct( $dni, $year, $asignaturas = null)
+    {
+        $this->dni = $dni;
+        $this->year = $year;
+        $this->asignaturas = $asignaturas;
+    }
+}

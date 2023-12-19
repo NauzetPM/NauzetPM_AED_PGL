@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb165ec50755e305789bbb46d7797a3e2485c2f0513c6320e4e5c1a09f6089e0
-size 314
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Laravel</title>
+
+    </head>
+    <body>
+    <p>Son las: <?php echo date('H:i'); ?> del día: <?php echo date('d-m-Y'); ?></p>
+    </body>
+</html>

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:118aa933757fa891d05d11b06a1a43f37d2742b68ae5da7e203b964ddf946079
-size 466
+import React, { useState, useEffect } from 'react';
+function Practica18_1() {
+ const [count, setCount] = useState(0);
+ // De forma similar a componentDidMount y componentDidUpdate
+ // Actualiza el título del documento usando
+ //la API del navegador
+ useEffect(() => { document.title = `You clicked ${count} times`; });
+ return (
+ <div>
+ <p>You clicked {count} times</p>
+ <button onClick={() => setCount(count + 1)}>
+ Click me
+ </button>
+ </div>
+ );
+}

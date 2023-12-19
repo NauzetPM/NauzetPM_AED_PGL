@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1d9a6f61d42110d745958d3fcf0369b057fa7d9838c10ebea5105a94fd3ad201
-size 589
+const yargs = require('yargs/yargs')
+const { hideBin } = require('yargs/helpers')
+const argv = yargs(hideBin(process.argv)).argv
+
+// Importa la función escribir desde manejarTabla.js
+const { escribir } = require('./manejarTabla');
+// Importa la función crearTabla desde crearTabla.js
+const { crearTabla } = require('./crearTabla');
+
+
+
+
+
+const numero = argv.tabla;
+
+const tabla = crearTabla(numero);
+
+async function main() {
+  try {
+    await escribir('tabla.txt', tabla);
+    console.log('ok grabado');
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+main();

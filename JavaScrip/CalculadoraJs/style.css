@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f157de9d61c458322454ccbda3cb3a029219ce9405c348088e9d8f5f7f395d88
-size 113
+form{
+    margin:auto;
+    font-size: 2rem;
+    max-width: 15rem;
+    background:blueviolet;
+    padding: 1rem;
+}

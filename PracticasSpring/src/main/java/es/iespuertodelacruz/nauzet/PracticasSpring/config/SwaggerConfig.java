@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:53e532c2f3e58153a18392e462a948e55d5fa3dd208c4764e76fc9f84e643065
-size 1014
+package es.iespuertodelacruz.nauzet.PracticasSpring.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import io.swagger.v3.oas.annotations.info.Info;
+import io.swagger.v3.oas.models.Components;
+import io.swagger.v3.oas.models.OpenAPI;
+import io.swagger.v3.oas.models.security.SecurityRequirement;
+
+@Configuration
+@OpenAPIDefinition(info = @Info(title = "Api Gente", version = "v1"))
+public class SwaggerConfig {
+	@Bean
+	public OpenAPI customizeOpenAPI() {
+		final String securitySchemeName = "bearerAuth";
+		return new OpenAPI().addSecurityItem(new SecurityRequirement().addList(securitySchemeName))
+				.components(new Components().addSecuritySchemes(securitySchemeName,
+						new io.swagger.v3.oas.models.security.SecurityScheme().name(securitySchemeName)
+								.type(io.swagger.v3.oas.models.security.SecurityScheme.Type.HTTP).scheme("bearer")
+								.bearerFormat("JWT")));
+	}
+}

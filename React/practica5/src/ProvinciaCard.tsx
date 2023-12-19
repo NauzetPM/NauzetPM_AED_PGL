@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3fc188c7acd6dd7f0035cba551f64af8fa91d2975de4c8afcb8ce55262558650
-size 380
+import React from 'react';
+
+export type ProvinciaCardProps = {
+  name: string;
+  image: string;
+};
+
+const ProvinciaCard: React.FC<ProvinciaCardProps> = ({ name, image}) => {
+    const ruta = `http://localhost:3000/${image}`;
+    
+  return (
+    <div className="PokemonCard">
+      <h3>Nombre: {name}</h3>
+      <img src={ruta} />
+    </div>
+  );
+};
+
+export default ProvinciaCard;

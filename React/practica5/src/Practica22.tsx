@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2a008eb1f04ffea678f169ec96b9eddce22a263cbb1d0e3ef092cceb41663ef3
-size 639
+import React,{useEffect,useState} from "react";
+type Props={
+    zona?: string;
+}
+const Practica22=(props:Props)=>{
+    const [fechaactual , setfecha]=useState<string>("");
+    
+    useEffect(()=>{
+        const timerID=setInterval(
+            tick,
+            1000
+        );
+    },[])
+
+    function tick() {
+        let zona=props.zona?? "Europe/London";
+        const fecha = new Date().toLocaleString( "es-ES",{timeZone: zona });
+        setfecha(fecha);
+    }
+    return(
+        <div>
+            <h3>Ejemplo reloj Dinamico</h3>
+            {fechaactual}
+        </div>
+
+    )
+}
+export default Practica22

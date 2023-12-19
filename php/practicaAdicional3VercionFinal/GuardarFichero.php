@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9cf443ecf8f8acf15c6a1792be1461bcad0039ef0e7fd5271fe41063ee17d137
-size 380
+<?php
+$array=["Joel","Moises","Julio","Owen","Patricia","Ruben","Nathan","Saul","Juanma","Javier","Cristian","Alberto","Angel","Nauzet"];
+$file = 'prueba.txt';
+
+
+
+
+    // Open the file to get existing content
+    /*$current = file_get_contents($file);
+    $current = array;*/
+    // Write the contents back to the file
+    file_put_contents($file, array(serialize($array)));
+
+
+
+?>

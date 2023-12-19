@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a56a57f14bd63c56d8696ff758c37f117d7719f1f43b3314ac2b1e21899d8722
-size 806
+import { StyleSheet, Switch, Text, TextInput, View } from 'react-native'
+import React, { useState } from 'react'
+import SwitchLabel from '../components/SwitchLabel'
+import adicional from '../hooks/adicional'
+
+type Props = {}
+
+const Adicional = (props: Props) => {
+    const {formdata,fillFormData}=adicional();
+    const[jubilado,setJubilado]=useState(false);
+  return (
+    <View style={{flex:1}}>
+        <SwitchLabel nombre={"jubilado"} setData={setJubilado}/>
+        <SwitchLabel nombre={"casado"} setData={setJubilado}/>
+    </View>
+  )
+}
+/*      <TextInput placeholder='nombre' onChangeText={(texto)=>fillFormData(texto,"nombre")}/>
+      <TextInput placeholder='edad' onChangeText={(texto)=>fillFormData(texto,"edad")}/>
+        <Text>{JSON.stringify(formdata)}</Text>
+*/ 
+export default Adicional

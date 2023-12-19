@@ -1,3 +1,46 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6436d67599f71f9a42c5be2fc6b8d5aa1489bc7dd65501ad02f2e4a88a4cb154
-size 1076
+<?php
+
+
+    class PersonaView{
+
+        public function __construct(){}
+        
+        private function cabecera(){
+            return '            
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+                
+            </head>
+            <body>';
+        }
+
+        private function pie(){
+            return '
+            </body>
+            </html>            
+            ';
+        }
+
+        public function mostrar($datos){
+            echo $this->cabecera();
+            echo "Se ha recibido:<br>";
+            echo "<table>";
+            foreach($datos as $key=>$value){
+                echo "<tr>";
+                echo "<td>";
+                echo "clave: ".$key." valor: ".$value;
+                echo "</td>";
+                echo "</tr>";
+            }
+            echo "</table>";            
+            echo $this->pie();
+            
+        }
+    }
+?>
+
+

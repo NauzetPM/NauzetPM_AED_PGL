@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0e74f3d677d8ce3b93e76e77ccee8f62065b8bc1cddfb4ca3c98c2c7e234af9c
-size 498
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class Practica13 extends Controller
+{
+    public function index(Request $request)
+    {
+        $color = $request->input('color');
+        $colores= session()->get('colores') ?? [] ;
+        $colores[]=$color;
+        $aleatorio=rand(0,count($colores));
+        $colorFavorito=$colores[$aleatorio];
+        session()->put('colores',$colores);
+        return view('practica13_2view', compact('colores','colorFavorito'));
+    }
+}

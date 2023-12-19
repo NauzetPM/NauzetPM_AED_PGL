@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:13d7075808be272cfdf2a5f814527c8b4f32b1a6022ffd5d2f283206a50138b4
-size 488
+.invisible {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.principal {
+    max-width: 25rem;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.celda {
+    background-color: #050505;
+    border: 1px solid #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}

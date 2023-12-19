@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0efedf6cf874c20920ed3b573a4ba7d4fdf51e862416cd422f6bb0b9f0294e88
-size 386
+-------------------------------------------------------------------------------
+Test set: es.iespuertodelacruz.npm.instituto.repository.AlumnoRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.814 s -- in es.iespuertodelacruz.npm.instituto.repository.AlumnoRepositoryTest

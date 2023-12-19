@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a979e9d75ea3bb5a680ebb7af8394e9995d0171ca16ab07e8329f09db8a7f6d9
-size 160
+<root>
+  <facet id="jpt.jpa">
+    <node name="libprov">
+      <attribute name="provider-id" value="jpa-no-op-library-provider"/>
+    </node>
+  </facet>
+</root>

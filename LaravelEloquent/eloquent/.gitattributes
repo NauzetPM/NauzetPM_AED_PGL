@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6a22e0993b609a4c9a562884fe08bf3b9c8c1cf7642d221f01ccd46e98bb3dc7
-size 179
+* text=auto
+
+*.blade.php diff=html
+*.css diff=css
+*.html diff=html
+*.md diff=markdown
+*.php diff=php
+
+/.github export-ignore
+CHANGELOG.md export-ignore
+.styleci.yml export-ignore

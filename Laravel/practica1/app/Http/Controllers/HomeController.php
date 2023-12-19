@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb81d1e51cba776cf5d8da6e6dc679406da69041624c991d16b82c0bbedc478f
-size 553
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class HomeController extends Controller
+{
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        //$this->middleware('auth');
+    }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function index()
+    {   
+       /* echo 'vamos a hacer run die en homecontroller index';
+        die();*/
+        return view('home');
+    }
+}

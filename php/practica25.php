@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5a3cfbc026398f58e4f6f1dcf56333e7d55952786061bb561b2d3a99bbfa30dc
-size 223
+<?php
+$array =[];
+for ($i=0; $i < 10; $i++) { 
+    $array[$i]=rand(20,25);
+}
+echo "array Completo:   ";
+//var_dump($array);
+print_r($array);
+echo "<br>Search:   ";
+$busqueda =array_search(22,$array);    
+echo $busqueda;
+
+?>

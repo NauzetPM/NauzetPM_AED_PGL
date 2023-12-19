@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c67b0b495fd689232d4d13e511d5e2ddf22e53e796fae948791dd2dade4392fc
-size 354
+package es.iespuertodelacruz.nauzet.PracticasSpring;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class PracticasSpringApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(PracticasSpringApplication.class, args);
+	}
+
+}

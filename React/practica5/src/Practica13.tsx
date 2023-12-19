@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3ac4b15aecc56af545f78af6b35e932799bd2ff03e3239433114a2ef55ddfd76
-size 1015
+import React, { useState } from 'react'
+type Props = {}
+type Moneda = {
+    nombre: string,
+    pais: string
+}
+
+const Practica13 = (props: Props) => {
+
+    const [monedas, setmonedas] = useState<Array<Moneda>>([]);
+    function addMoneda() {
+        const moneda: Moneda = {
+            nombre: "libra",
+            pais: "uk"
+        }
+        setmonedas([...monedas, moneda]);
+    }
+    return (
+        <>
+            <h3>Cliente de monedas</h3>
+            <div>
+                <button onClick={addMoneda}>
+                    agregar moneda
+                </button>
+                <h4>Monedas: </h4>
+                <ul>
+                    {
+                        monedas.map((m: Moneda) => {
+                            return (
+                                <li> {m.nombre} {m.pais} </li>
+                            );
+                        })
+                    }
+                </ul>
+            </div>
+        </>
+    );
+}
+
+
+export default Practica13

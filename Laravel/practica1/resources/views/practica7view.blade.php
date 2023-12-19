@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6933075a58bf9c3a1b0c6921b527d8583cc76ae136a6563580062d19baa053f5
-size 1024
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Laravel</title>
+
+    </head>
+    <body>
+    @section('content')
+    <div class="container">
+        @foreach ($primos as $primo)
+            <h2>Tabla para el número primo: {{ $primo }}</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Campo</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for ($i = 1; $i <= 10; $i++) {{-- Cambia 10 al número de campos que desees --}}
+                        <tr>
+                            <td>Campo {{ $i }}</td>
+                            <td>Valor para Campo {{ $i }}</td>
+                        </tr>
+                    @endfor
+                </tbody>
+            </table>
+        @endforeach
+    </div>
+@endsection
+    </body>
+</html>

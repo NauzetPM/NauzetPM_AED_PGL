@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7b59f6739731f4e26133b7724e5c7534fc235f6664d6f7dd06a9a6ac072a4cba
-size 534
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve"
+  },
+  "include": [
+    "src"
+  ]
+}

@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:191790ad3ab99605f889f6bf17870c5cf2f5b6e685f283817f25b09d7dd572b7
-size 532
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Laravel</title>
+        <style>
+            body{
+                background-color: {{$colorFavorito}}
+            }
+        </style>
+    </head>
+
+    <body>
+        <ul>
+            @for ($i = 0; $i < count($colores); $i++)
+                <li>{{ $colores[$i] }}</li>
+            @endfor
+        </ul>
+        <a href="/practica13">Inicio</a>
+    </body>
+</html>

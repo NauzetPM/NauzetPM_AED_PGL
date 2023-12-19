@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:35247e801324104b9194542765816bb2ccab6fb9b1de82a15a56e65ef742959a
-size 398
+import React from 'react';
+
+export type TareaProps = {
+  contenido:string,
+  activa:boolean,
+  titulo:string,
+  id:number,
+};
+
+const  Tarea: React.FC<TareaProps> = ({contenido,activa,titulo,id}) => {
+    
+  return (
+    <div className="PeliculaCard">
+        <h3>contenido:{contenido}</h3>
+        <h3>activa:{activa}</h3>
+        <h3>titulo:{titulo}</h3>
+    </div>
+  );
+};
+
+export default Tarea;

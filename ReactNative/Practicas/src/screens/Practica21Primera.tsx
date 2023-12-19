@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9d228c83a8c7f59135895501bbb647c67586e03fbad178b4e9931f76fb5ac914
-size 905
+import {Button, SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+type Props = {
+    navigation:any
+    route:any,
+};
+
+const Practica21Primera = ({navigation,route}:Props) => {
+  return (
+    <SafeAreaView style={{flex: 1}}>
+      <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+        <Text>Primera screen---------</Text>
+        <Button
+          title="cambiar a tercera"
+          onPress={() => navigation.navigate('Tercera', {nombre: 'Aquilino'})}
+        />
+        <Button
+          title="cambiar a segunda"
+          onPress={() => navigation.navigate('Segunda')}
+        />
+      </View>
+    </SafeAreaView>
+  );
+};
+
+export default Practica21Primera;
+
+const styles = StyleSheet.create({});

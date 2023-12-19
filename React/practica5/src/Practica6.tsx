@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c2945a48db181fe0a95842963a49a00f673996915403b0bac7f698d02417c261
-size 314
+import React from 'react'
+import Reloj from './Reloj'
+
+type Props ={
+}
+export const Practica6 = (props: Props) => {
+return (
+<>
+<h1>Actividad react: Relojes mundiales</h1>
+    <Reloj zona="Europe/Madrid" />
+    <Reloj zona="America/New_York" />
+    <Reloj zona="Europe/London" />
+</>
+)
+}
+
+export default Practica6

@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:76432cf4c03bb3043944077c5e2e6964b3f01b061c50ed99fea6a4eb300311e5
-size 263
+# Created at 2023-11-17T10:17:05.743
+Boot Manifest-JAR contains absolute paths in classpath 'E:\2Dam\NauzetPM_AED_PGL\JpaInstituto\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

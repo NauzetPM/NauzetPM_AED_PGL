@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b21d9f21cfe85a3b69067cef0ceb2e8d31e3965566ea56505e09b8c477e3adf4
-size 298
+<?php
+ function sumar($a, $b, $print): float
+ {
+ $suma = $a + $b;
+ if ($print) {
+ echo "resultado suma: $suma <br>";
+ }
+ return $suma;
+
+ }
+ $sum1=sumar(1,2);//da error ya que espera 3 parametros
+ $sum2=sumar(4,5,true);
+
+ echo "las operaciones para sum1 y sum2 dan: $sum1 , $sum2";
+ ?>

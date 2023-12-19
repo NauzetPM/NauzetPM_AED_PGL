@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:479d70a9a7bd1f8048744f97b2ed2fe80a352605d5c008e6ac392d45b3a08927
-size 465
+<?php
+const PULGADA = 2.53;
+echo PULGADA;
+//Muestra el 2.53
+
+/*PULGADA = 7;
+echo "<br>$PULGADA";*/
+
+//Da error por ser constante
+
+/*const PULGADA = 8;
+echo "<br>";
+echo PULGADA;*/
+
+//Da un error por variable ya definida
+// y vuelve a mostrar el primer valor el 2.53
+
+/*PULGADA = 9;
+echo "<br>$PULGADA";*/
+
+//Da un error por variable ya definida
+
+/*function prueba(){
+    const PULGADA = 10;
+}*/
+//Da error el definir variable 
+//con const dentro de una funcion
+
+
+?>

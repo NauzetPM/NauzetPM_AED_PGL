@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a1cf7c266d47d464c1d771de586e111cdf848206f3efc70d41ac432d247995cc
-size 235
+<?php
+namespace App\Contracts;
+class AsignaturaMatriculaContract{
+public const TABLE_NAME="asignatura_matricula";
+public const COL_ID="id";
+public const COL_IDMATRICULA="idmatricula";
+public const COL_IDASIGNATURA="idasignatura";
+}
+?>

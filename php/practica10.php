@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d029092743338d44fa42c97eb5b2d98a41dbb8d11d73d3be62705604d04915cb
-size 373
+<?php 
+$numero = 3102;
+
+$longitud = strlen($numero);
+$cadena = "";
+$multiplicar=1;
+ for ($i=1; $i <= $longitud; $i++) { 
+    
+    if($i>1){
+        $multiplicar=$multiplicar*10;
+    }
+    $actual=substr($numero,-$i,1);
+    if($i==$longitud){
+        $cadena .= "$actual * $multiplicar ";
+    }else{
+    $cadena .= "$actual * $multiplicar +";
+    }
+    }
+
+echo "$cadena";
+?>

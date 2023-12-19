@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:475faf59aff8f5cb555f37911fdcdabfcc4e88a0dccddf121c37d192ddbf5a75
-size 357
+<?php
+$array=[7,2,8,1,9,4];
+$arraySearch=array_search(4,$array);
+echo "El array entero es: <br>";
+print_r($array);
+echo "<br> El array Search queda: $arraySearch";
+
+function cmp($a, $b){
+    return $a <=> $b;
+}
+usort($array, "cmp");
+echo "El array entero Ordenado es: <br>";
+print_r($array);
+echo "<br> El array Search queda: $arraySearch";
+?>

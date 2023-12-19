@@ -1,3 +1,52 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3af2181da9af755c98cd252f8e52bd9dcba6fa894e6a047509ff989e59ee1f47
-size 1655
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Monedas</groupId>
+  <artifactId>Monedas</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/java</directory>
+        <excludes>
+          <exclude>**/*.java</exclude>
+        </excludes>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <release>17</release>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.20</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>5.4.3.Final</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-
+entitymanager -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>5.4.3.Final</version>
+		</dependency>
+		<!--
+https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api -->
+		<dependency>
+			<groupId>javax.persistence</groupId>
+			<artifactId>javax.persistence-api</artifactId>
+			<version>2.2</version>
+		</dependency>
+	</dependencies>
+</project>
