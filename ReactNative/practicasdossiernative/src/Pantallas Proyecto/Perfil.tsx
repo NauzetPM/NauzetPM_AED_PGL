@@ -14,24 +14,31 @@ import Icon from 'react-native-vector-icons/Ionicons';
 const DATA = [
  {
     id: '1',
-    title: 'Info 1',
+    title: 'Nombre',
  },
  {
     id: '2',
-    title: 'Info 2',
+    title: 'Contraseña',
  },
+ {
+  id: '3',
+  title: 'Gmail',
+},
 ];
 
 interface ItemProps {
     title: string;
   }
-const Item: React.FC<ItemProps> = ({ title }) => (
-    <View style={styles.item}>
-      <Text style={styles.title}>{title}</Text>
-    </View>
-  );
 
-  const renderItem = ({ item }: { item: { id: string; title: string } }) => <Item title={item.title} />;
+
+  const renderItem = ({ item }: { item: { id: string; title: string } }) =>
+  <View style={styles.item}>
+  <Text>{item.title} </Text> 
+  <TouchableOpacity>
+  <Icon name="pencil-outline" size={24} color="black" />
+  </TouchableOpacity> 
+  </View>
+  ;
 
 const Perfil = ({navigation}) => {
  const navigateBack = () => {

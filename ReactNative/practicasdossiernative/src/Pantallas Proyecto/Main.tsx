@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, TextInput, FlatList, SafeAreaView } from 'react-native';
-
+import { Avatar, Card, Button} from '@rneui/themed';
+import Icon from 'react-native-vector-icons/Ionicons';
 const DATA = [
  { id: '1', title: 'Elemento 1' },
  { id: '2', title: 'Elemento 2' },
@@ -19,7 +20,31 @@ const Item: React.FC<ItemProps> = ({ title }) => (
 
 const Main = ({navigation}) => {
  const [searchText, setSearchText] = React.useState('');
- const renderItem = ({ item }: { item: { id: string; title: string } }) => <Item title={item.title} />;
+ const renderItem = ({ item }: { item: { id: string; title: string } }) => 
+ <Card>
+ <Card.Title>Nombre Producto</Card.Title>
+ <Card.Divider />
+ <Card.Image
+   style={{ padding: 0 }}
+   source={{
+     uri:
+       'https://awildgeographer.files.wordpress.com/2015/02/john_muir_glacier.jpg',
+   }}
+ />
+ <Text style={{ marginBottom: 10 }}>
+   Descripcion Producto
+ </Text>
+ <Button
+   buttonStyle={{
+     borderRadius: 0,
+     marginLeft: 0,
+     marginRight: 0,
+     marginBottom: 0,
+   }}
+   title="VER"
+ />
+</Card>
+          ;
 
 
  const navigateToProfile = () => {
@@ -30,7 +55,26 @@ const Main = ({navigation}) => {
  const renderNavBar = () => (
     <SafeAreaView style={styles.navBar}>
       <TouchableOpacity onPress={navigateToProfile}>
-        <Text style={styles.navBarText}>Perfil</Text>
+
+    <Avatar
+      avatarStyle={{}}
+      containerStyle={{ backgroundColor: "#BDBDBD" }}
+      icon={{}}
+      iconStyle={{}}
+      imageProps={{}}
+      overlayContainerStyle={{}}
+      placeholderStyle={{}}
+      rounded
+      size="medium"
+      source={{
+        uri:
+          "https://randomuser.me/api/portraits/men/36.jpg"
+      }}
+      title="P"
+      titleStyle={{}}
+    />
+
+
       </TouchableOpacity>
       <TextInput
         style={styles.searchBar}
@@ -39,7 +83,7 @@ const Main = ({navigation}) => {
         value={searchText}
       />
       <TouchableOpacity>
-        <Text style={styles.navBarText}>{'>'}</Text>
+      <Icon name="search-outline" size={24} color="black" />
       </TouchableOpacity>
     </SafeAreaView>
  );
