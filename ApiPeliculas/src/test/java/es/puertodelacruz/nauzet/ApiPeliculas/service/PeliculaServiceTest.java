@@ -92,7 +92,7 @@ class PeliculaServiceTest {
 	
 	@Test
 	void savePeliculaService() {
-		/*
+		
 		Pelicula pelicula = new Pelicula();
 		pelicula.setActores("actor, actriz");
 		pelicula.setArgumento("argumento");
@@ -124,8 +124,8 @@ class PeliculaServiceTest {
 		pelicula.setImagen("1imagen");
 		pelicula.setTitulo("1título");
 		pelicula.setTrailer("1trailer");
-		
-		//pelicula.setCategorias(new List<Categoria>());
+		//List<Categoria> list=new ArrayList<>();;
+		//pelicula.setCategorias(list);
 		//pelicula.setCategorias(new ArrayList<>());
 		Categoria categoria = new Categoria();
 		categoria.setId(1);
@@ -161,7 +161,7 @@ class PeliculaServiceTest {
 
 		
 
-		*/
+		
 	}	
 	
 }

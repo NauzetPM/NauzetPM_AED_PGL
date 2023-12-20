@@ -2,6 +2,8 @@ package es.puertodelacruz.nauzet.ApiPeliculas.entity;
 
 import java.io.Serializable;
 import jakarta.persistence.*;
+
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -39,6 +41,7 @@ public class Pelicula implements Serializable {
 	private List<Categoria> categorias;
 
 	public Pelicula() {
+		this.categorias = new ArrayList<>();
 	}
 
 	public int getId() {
