@@ -1,7 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
-	<persistence-unit name="ApiPeliculas">
-
-
-	</persistence-unit>
-</persistence>
+version https://git-lfs.github.com/spec/v1
+oid sha256:503c80fa3c084c7c88459596c99c79e8b7e08166eded798b3ae244ea3352dfed
+size 369

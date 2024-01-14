@@ -1,13 +1,3 @@
-package es.puertodelacruz.nauzet.ApiPeliculas.mappers;
-
-import es.puertodelacruz.nauzet.ApiPeliculas.dto.LoginRegisterDTOInput;
-import es.puertodelacruz.nauzet.ApiPeliculas.security.UserDetailsLogin;
-
-public class LoginRegisterDTOMapper {
-    public static UserDetailsLogin toDomain(LoginRegisterDTOInput loginRegisterDto) {
-    	UserDetailsLogin userDetails = new UserDetailsLogin();
-    	userDetails.setUsername(loginRegisterDto.getUsername());
-    	userDetails.setPassword(loginRegisterDto.getPassword());
-        return userDetails;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:13f9e11fe162c799078576c84cdbc29b8c73f9f713dda19a4837b4e96bdc5312
+size 638

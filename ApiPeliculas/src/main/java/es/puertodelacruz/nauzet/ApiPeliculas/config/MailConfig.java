@@ -1,33 +1,3 @@
-package es.puertodelacruz.nauzet.ApiPeliculas.config;
-
-import java.util.Properties;
-
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.mail.javamail.JavaMailSenderImpl;
-
-@Configuration
-public class MailConfig {
-	@Value("${mail.from}")
-	private String mailfrom;
-	@Value("${mail.password}")
-	private String mailpassword;
-
-	@Bean
-	public JavaMailSender getJavaMailSender() {
-		JavaMailSenderImpl sender = new JavaMailSenderImpl();
-		sender.setHost("smtp.gmail.com");
-		sender.setPort(587);
-		sender.setUsername(mailfrom);
-		sender.setPassword(mailpassword);
-		Properties props = sender.getJavaMailProperties();
-		props.put("mail.transport.protocol", "smtp");
-		props.put("mail.smtp.auth", "true");
-		props.put("mail.smtp.starttls", "true");
-		props.put("mail.debug", "true");
-		props.put("mail.smtp.starttls.enable", "true");
-		return sender;
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6d9c6b1015d7677789f4365c528736963947ea0908fa079760c813aa50089c06
+size 1388

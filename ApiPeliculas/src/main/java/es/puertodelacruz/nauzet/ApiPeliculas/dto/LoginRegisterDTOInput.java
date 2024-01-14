@@ -1,22 +1,3 @@
-package es.puertodelacruz.nauzet.ApiPeliculas.dto;
-
-public class LoginRegisterDTOInput {
-	public String username;
-	public String password;
-	
-	public LoginRegisterDTOInput() {
-	}
-	public String getUsername() {
-		return username;
-	}
-	public void setUsername(String username) {
-		this.username = username;
-	}
-	public String getPassword() {
-		return password;
-	}
-	public void setPassword(String password) {
-		this.password = password;
-	}
-	
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4f76d2cb959e588d595df7989f6f641ab656adb34c49f2332a312cec0fb01a28
+size 568
