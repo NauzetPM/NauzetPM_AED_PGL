@@ -1,33 +1,3 @@
-package es.puertodelacruz.nauzet.ApiPeliculas.mappers;
-
-import java.util.ArrayList;
-
-import es.puertodelacruz.nauzet.ApiPeliculas.dto.PeliculaDTOInput;
-import es.puertodelacruz.nauzet.ApiPeliculas.entity.Categoria;
-import es.puertodelacruz.nauzet.ApiPeliculas.entity.Pelicula;
-
-public class PeliculaDTOInputMapper {
-    public static Pelicula toDomain(PeliculaDTOInput pelidto) {
-        Pelicula pelicula = new Pelicula();
-        ArrayList<Categoria> categorias = new ArrayList<>();
-
-        for (Integer categoryId : pelidto.getCategorias()) {
-            Categoria cat = new Categoria();
-            cat.setId(categoryId);
-            cat.setPeliculas(new ArrayList<>()); 
-            categorias.add(cat);
-        }
-
-
-        pelicula.setActores(pelidto.getActores());
-        pelicula.setArgumento(pelidto.getArgumento()); 
-        pelicula.setCategorias(categorias);
-        pelicula.setDireccion(pelidto.getDireccion());
-        pelicula.setId(pelidto.getId());
-        pelicula.setImagen(pelidto.getImagen());
-        pelicula.setTitulo(pelidto.getTitulo());
-        pelicula.setTrailer(pelidto.getTrailer());
-
-        return pelicula;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1a92e9fe5aa4360492605e0bb93e170bcb51eececcdcc3d541d0d34fdd1699fa
+size 1152

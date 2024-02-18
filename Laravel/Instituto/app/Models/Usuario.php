@@ -1,16 +1,3 @@
-<?php
-
-namespace App\Models;
-
-class Usuario
-{
-    public $id;
-    public $nombre;
-    public $contrasenia;
-
-    public function __construct( $nombre, $contrasenia)
-    {
-        $this->nombre = $nombre;
-        $this->contrasenia = $contrasenia;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:86977d06736a7d0c98ece9ef42b9cf3113d73358df339b248aab5652b060d909
+size 254

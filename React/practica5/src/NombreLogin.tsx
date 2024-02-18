@@ -1,21 +1,3 @@
-import React from "react";
-import { useAppContext } from "./LoginContext";
-
-
-const NombreLogin: React.FC = () => {
-    const {stateNombre,setstateNombre}=useAppContext();
-
-  return (
-    <div className="PokemonFavorite">
-      {stateNombre!="" ? (
-        <>
-             <h3>Hola:{stateNombre}</h3>
-        </>
-      ) : (
-        <p>No te has logeado.</p>
-      )}
-    </div>
-  );
-};
-
-export default NombreLogin;
+version https://git-lfs.github.com/spec/v1
+oid sha256:c1797305db3c33d228354f1a8d6e74150e25eca5cd6878d025c1c776e2a415eb
+size 436

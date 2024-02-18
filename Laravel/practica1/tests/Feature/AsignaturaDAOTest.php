@@ -1,25 +1,3 @@
-<?php
-
-namespace Tests\Feature;
-
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Tests\TestCase;
-
-use function PHPUnit\Framework\assertTrue;
-
-class AsignaturaDAOTest extends TestCase
-{
-    /**
-     * A basic feature test example.
-     *
-     * @return void
-     */
-    public function test_example()
-    {
-        $response = $this->get('/');
-
-        $response->assertStatus(200);
-        assertTrue(true);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7250f012be56c0df35427f09419e317bdd9519d25a5241f38aa92e4d60f5bc64
+size 468

@@ -1,13 +1,3 @@
-<?php
-$array = ["a","a","a","a","a"];
-$j=count($array);
-foreach( $array as $key => $val){
-$j--;
-$array[$j] .= $j;
-echo "<br>";
-var_dump($array);
-echo "<br> $key => $val"; //esta línea no tiene el efecto deseado
-echo "<br> aqui es el array: $key => $array[$key]"; // aquí sí
-echo "<br>";
-}
-?>
+version https://git-lfs.github.com/spec/v1
+oid sha256:3f5fc068a3642378dc3ba6b293febb04a8536fc2bea7636243edd53871bdb635
+size 294

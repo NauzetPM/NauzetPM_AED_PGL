@@ -1,24 +1,3 @@
-package es.puertodelacruz.nauzet.ApiPeliculas.config;
-
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-
-import io.swagger.v3.oas.annotations.OpenAPIDefinition;
-import io.swagger.v3.oas.annotations.info.Info;
-import io.swagger.v3.oas.models.Components;
-import io.swagger.v3.oas.models.OpenAPI;
-import io.swagger.v3.oas.models.security.SecurityRequirement;
-
-@Configuration
-@OpenAPIDefinition(info = @Info(title = "Api Peliculas", version = "v1"))
-public class SwaggerConfig {
-	@Bean
-	public OpenAPI customizeOpenAPI() {
-		final String securitySchemeName = "bearerAuth";
-		return new OpenAPI().addSecurityItem(new SecurityRequirement().addList(securitySchemeName))
-				.components(new Components().addSecuritySchemes(securitySchemeName,
-						new io.swagger.v3.oas.models.security.SecurityScheme().name(securitySchemeName)
-								.type(io.swagger.v3.oas.models.security.SecurityScheme.Type.HTTP).scheme("bearer")
-								.bearerFormat("JWT")));
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c19140396893c449c678a300664ef80b7a2d5defe8f0cde7020563f8fa257faa
+size 1012

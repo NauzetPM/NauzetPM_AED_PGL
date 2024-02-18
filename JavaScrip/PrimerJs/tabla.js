@@ -1,23 +1,3 @@
-const DOM={
-    inputTabla:document.getElementById("inputTabla"),
-    divResultado: document.getElementById("resultado")
-}
-
-let elinputTabla=document.getElementById("inputTabla");
-let tableResultado= document.querySelector(".resultado");
-
-function calcularTabla() {
-tableResultado.innerHTML="";
-//DOM.inputTabla.value;
-let tabla=elinputTabla.value;
-
-
-for (let i = 1; i <= 10; i++) {
-    let elTd=document.createElement("td");
-    let elTr=document.createElement("tr");
-    elTr.appendChild(elTd);
-    tableResultado.appendChild(elTr);
-    elTd.innerText=tabla+"*"+i+"="+tabla*i;
-}
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:a8e0af69a1553a6208d0fc0f0b510606bddcf4d765807760060438f40ce9f117
+size 584

@@ -1,10 +1,3 @@
-{
-  "extends": "@tsconfig/react-native/tsconfig.json",
-"compilerOptions": {
-"strict": false,
-"allowSyntheticDefaultImports": true,
-"emitDecoratorMetadata": true,
-"experimentalDecorators": true,
-"skipLibCheck": true
-}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ea9aa5fe32636a9bb39c9b7d9eec765f35bb6fa2f894ce24ebc0f2a587d3ae20
+size 219

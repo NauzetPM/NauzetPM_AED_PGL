@@ -1,19 +1,3 @@
-buildscript {
-    ext {
-        buildToolsVersion = "33.0.0"
-        minSdkVersion = 21
-        compileSdkVersion = 33
-        targetSdkVersion = 33
-
-        // We use NDK 23 which has both M1 support and is the side-by-side NDK version from AGP.
-        ndkVersion = "23.1.7779620"
-    }
-    repositories {
-        google()
-        mavenCentral()
-    }
-    dependencies {
-        classpath("com.android.tools.build:gradle")
-        classpath("com.facebook.react:react-native-gradle-plugin")
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0cfcb016494cb4ae9c33e2f67862d76dbb4c13e9e440c44f9792a7bd34463e6e
+size 500

@@ -1,19 +1,3 @@
-package es.puertodelacruz.nauzet.ApiPeliculas.mappers;
-
-import es.puertodelacruz.nauzet.ApiPeliculas.dto.CategoriaDTOInput;
-import es.puertodelacruz.nauzet.ApiPeliculas.entity.Categoria;
-
-public class CategoriaDTOInputMapper {
-
-    public static CategoriaDTOInput toDTO(Categoria categoria) {
-        CategoriaDTOInput categoriaDTOInput = new CategoriaDTOInput();
-        categoriaDTOInput.setNombre(categoria.getNombre());
-        return categoriaDTOInput;
-    }
-
-    public static Categoria toDomain(CategoriaDTOInput categoriaDTOInput) {
-        Categoria categoria = new Categoria();
-        categoria.setNombre(categoriaDTOInput.getNombre());
-        return categoria;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9fa8b34b7a75780fd01a6fcf4c7abc86221fc2310b85b006da04ebe81aa3cbcb
+size 682

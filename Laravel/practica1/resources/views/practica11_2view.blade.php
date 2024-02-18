@@ -1,18 +1,3 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
-
-    </head>
-    <body>
-        <ul>
-            @for ($i = 0; $i < count($palabrasArray); $i++)
-                <li>{{ $palabrasArray[$i] }}</li>
-            @endfor
-        </ul>
-
-    </body>
-</html>
+version https://git-lfs.github.com/spec/v1
+oid sha256:e3e385228025eb280c87805c2fb68b169bbfe4f6f60337d8309dadb8aededd36
+size 386

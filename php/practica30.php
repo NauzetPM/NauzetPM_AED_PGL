@@ -1,9 +1,3 @@
-<?php
- function modify(int &$a): void {
- $a = 3;
- }
- $a = 2;
- modify($a);
- print_r($a);
- //es una modificacion por referencia
- ?>
+version https://git-lfs.github.com/spec/v1
+oid sha256:64197bcf35d05d79e5b5369c4d9ef3bd6881c42282fac73900246a833ae84d45
+size 137

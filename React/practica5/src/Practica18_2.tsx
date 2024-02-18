@@ -1,27 +1,3 @@
-import React from "react";
-type Props = {
-}
-type MiState = {
-  count: number,
-  nombre?: string
-}
-class Example extends React.Component<Props, MiState> {
-  constructor(props: Props) {
-    super(props);
-    this.state = {
-      count: 0
-    };
-  }
-  componentDidMount() { document.title = `You clicked ${this.state.count} times`; }
-  componentDidUpdate() { document.title = `You clicked ${this.state.count} times`; }
-  render() {
-    return (
-      <div>
-        <p>You clicked {this.state.count} times</p>
-        <button onClick={() => this.setState({ count: this.state.count + 1 })}>
-          Click me
-        </button>
-      </div>
-    );
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c38aeedf67748353db4a838392316ffab99112d9fbbbf4ef1bb248822470b364
+size 674

@@ -1,13 +1,3 @@
-<?php
-$texto='Pasando datos diría.. que hay que usar urlencode';
-
-$conUrlEncode = urlencode($texto);
-$sinUrlEncode =$texto;
-echo "<a href=practica33.php?prueba=$conUrlEncode&prueba2=$sinUrlEncode>pasando datos</a>";
-$recibido = $_GET["prueba"] ?? "nadita";
-$recibido2 = $_GET["prueba"] ?? "nadita";
-echo "<h3>se ha recibido:</h3>";
-echo "prueba: ". $recibido . "<br>";
-echo "<h3>se ha recibido2:</h3>";
-echo "prueba: ". $recibido2 . "<br>";
-?>
+version https://git-lfs.github.com/spec/v1
+oid sha256:60679b9e0620311f5f6c04534b60537095f4cedc882754693bbebceed1ce20cb
+size 458

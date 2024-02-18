@@ -1,30 +1,3 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="{{ asset('css/login.css') }}">
-        <title>Laravel</title>
-
-   
-    </head>
-
-    <body>
-    <h2>Register de Usuario</h2>
-    @if (isset($arrayMensaje) && count($arrayMensaje) > 0)
-        <li>{{ $arrayMensaje[0] }}</li>
-    @endif
-
-<form action="/procesarRegisterDrive" method="POST">
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required><br><br>
-    <label for="nick">Nick:</label>
-    <input type="text" id="nick" name="nick" required><br><br>
-    <label for="password">Contraseña:</label>
-    <input type="password" id="password" name="password" required><br><br>
-    <input type="submit" value="Registrarse">
-    <a href="/driveLogin">Ir al Login</a>
-</form>
-
-    </body>
-</html>
+version https://git-lfs.github.com/spec/v1
+oid sha256:9e36f80951252c8d7a30e89385787067109d64dc87e75c4727a2c79f893b06e1
+size 938

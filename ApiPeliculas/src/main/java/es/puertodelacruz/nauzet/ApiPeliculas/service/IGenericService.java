@@ -1,10 +1,3 @@
-package es.puertodelacruz.nauzet.ApiPeliculas.service;
-
-import java.util.Optional;
-
-public interface IGenericService<T,E> {
-	Iterable<T> findAll();
-	Optional<T> findById(E id);
-	T save(T element);
-	void deleteById(E id);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:af4183269d4e851639aa1f4fcc4de5097c1498c0e47ffdfcfce476b60a415d33
+size 223

@@ -1,24 +1,3 @@
-package es.puertodelacruz.nauzet.ApiPeliculas.service;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.mail.SimpleMailMessage;
-import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.stereotype.Service;
-
-@Service
-public class MailService {
-	@Autowired
-	private JavaMailSender sender;
-	@Value("${mail.from}")
-	private String mailfrom;
-
-	public void send(String destinatario, String asunto, String contenido) {
-		SimpleMailMessage message = new SimpleMailMessage();
-		message.setFrom(mailfrom);
-		message.setTo(destinatario);
-		message.setSubject(asunto);
-		message.setText(contenido);
-		sender.send(message);
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6db294e6af2dcc776c08823940f29d70b6bfdfa7f2094b5a75bd93e7ecd7ddf9
+size 743

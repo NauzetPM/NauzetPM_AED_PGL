@@ -1,14 +1,3 @@
-const http=require('http');
-const url=require('url');
-
-const puerto=8000;
-http.createServer((req,res)=>{
-    res.write(`servidor funcionando en ${puerto}`);
-    const queryObject=url.parse(req.url,true).query;
-    console.log(queryObject);
-    let texto="";
-    Object.entries(queryObject)
-    .forEach((par)=> texto += (par[0]+": "+par[1]))
-    res.write(`se recibio como parametro: ${texto}`);
-    res.end();
-}).listen(puerto);
+version https://git-lfs.github.com/spec/v1
+oid sha256:9223671dd4054ef6ac26ac277c30639aca5c8f7266abf3fdc86d9d37d1d06a15
+size 429

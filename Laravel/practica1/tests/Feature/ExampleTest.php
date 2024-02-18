@@ -1,21 +1,3 @@
-<?php
-
-namespace Tests\Feature;
-
-// use Illuminate\Foundation\Testing\RefreshDatabase;
-use Tests\TestCase;
-
-class ExampleTest extends TestCase
-{
-    /**
-     * A basic test example.
-     *
-     * @return void
-     */
-    public function test_the_application_returns_a_successful_response()
-    {
-        $response = $this->get('/');
-
-        $response->assertStatus(200);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8104193c55d0372299a012da410eb20e94269ac73e2bbebb666d731425ac0ca1
+size 380

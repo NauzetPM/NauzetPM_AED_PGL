@@ -1,31 +1,3 @@
-// PokemonFavorite.tsx
-import React from "react";
-
-import PokemonCard from "./PokemonCard";
-import { useAppContext } from "./AppPokemonContext";
-
-const PokemonFavorito: React.FC = () => {
-    const {pokemonfav,setpokemonfav}=useAppContext();
-
-  return (
-    <div className="PokemonFavorite">
-      {pokemonfav.name!=undefined ? (
-        <>
-          <h2>Pokémon Favorito</h2>
-          <div className="PokemonCard">
-             <h3>Nombre: {pokemonfav.name}</h3>
-            <img src={pokemonfav.image1} />
-            <img src={pokemonfav.image2}  />
-            <img src={pokemonfav.image3}  />
-             <p>Peso: {pokemonfav.weight} kg</p>
-             <p>Altura: {pokemonfav.height} m</p>
-    </div>
-        </>
-      ) : (
-        <p>No hay un Pokémon favorito seleccionado.</p>
-      )}
-    </div>
-  );
-};
-
-export default PokemonFavorito;
+version https://git-lfs.github.com/spec/v1
+oid sha256:db79d25989270c84f9f8a71669fd19d49a85b6c9947e554bf013a056ef4ac41d
+size 852

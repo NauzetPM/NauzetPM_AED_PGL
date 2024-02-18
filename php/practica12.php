@@ -1,8 +1,3 @@
-<?php
-    $array = array('uno' => 1, 'dos' => 2, 'tres' => 40, 'cuatro' => 55);
-    $cadena = "la posición 'tres' contiene el dato {$array['tres']}";
-
-    //nos muestra el mensaje de error:  
-    //"syntax error, unexpected string content 
-    //"", expecting "." or identifier or variable or number";
-?>
+version https://git-lfs.github.com/spec/v1
+oid sha256:91f79cba3a7f685730421dd80e85bb58a3a9869ab37904b2b23b6f1a50ea1bd2
+size 312

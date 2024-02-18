@@ -1,22 +1,3 @@
-<?php
-
-namespace App\Http\Middleware;
-
-use Illuminate\Routing\Middleware\ValidateSignature as Middleware;
-
-class ValidateSignature extends Middleware
-{
-    /**
-     * The names of the query string parameters that should be ignored.
-     *
-     * @var array<int, string>
-     */
-    protected $except = [
-        // 'fbclid',
-        // 'utm_campaign',
-        // 'utm_content',
-        // 'utm_medium',
-        // 'utm_source',
-        // 'utm_term',
-    ];
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b63174bf5ac6fbb47dc97cc29e243d68500c27fa1845961a789df1587b8a35d4
+size 460

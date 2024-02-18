@@ -1,30 +1,3 @@
-<?php
-
-namespace App\Providers;
-
-// use Illuminate\Support\Facades\Gate;
-use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
-
-class AuthServiceProvider extends ServiceProvider
-{
-    /**
-     * The model to policy mappings for the application.
-     *
-     * @var array<class-string, class-string>
-     */
-    protected $policies = [
-        // 'App\Models\Model' => 'App\Policies\ModelPolicy',
-    ];
-
-    /**
-     * Register any authentication / authorization services.
-     *
-     * @return void
-     */
-    public function boot()
-    {
-        $this->registerPolicies();
-
-        //
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2e31c79707e8d342f4aec2add14cd327fc90e2114f8bb60173fc1e3bf394a163
+size 625

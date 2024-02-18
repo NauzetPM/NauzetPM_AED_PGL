@@ -1,16 +1,3 @@
-/node_modules
-/public/hot
-/public/storage
-/storage/*.key
-/public/images/icons/.DS_Store
-/public/js/app.js
-/vendor
-/.idea
-/.vscode
-/.vagrant
-Homestead.json
-Homestead.yaml
-npm-debug.log
-yarn-error.log
-.env
-.DS_Store
+version https://git-lfs.github.com/spec/v1
+oid sha256:0983036c03fc5b1c5d7ba227dbe843918a14c941a1fc9190b76b899779e9a4c7
+size 214

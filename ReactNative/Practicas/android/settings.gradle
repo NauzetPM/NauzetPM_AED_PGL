@@ -1,4 +1,3 @@
-rootProject.name = 'Practicas'
-apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
-include ':app'
-includeBuild('../node_modules/@react-native/gradle-plugin')
+version https://git-lfs.github.com/spec/v1
+oid sha256:a0887af0d9728f44da4a0d158bba2fac69b437c00ece8aebd228257c1342e45f
+size 253

@@ -1,11 +1,3 @@
-const {getDefaultConfig, mergeConfig} = require('@react-native/metro-config');
-
-/**
- * Metro configuration
- * https://facebook.github.io/metro/docs/configuration
- *
- * @type {import('metro-config').MetroConfig}
- */
-const config = {};
-
-module.exports = mergeConfig(getDefaultConfig(__dirname), config);
+version https://git-lfs.github.com/spec/v1
+oid sha256:5238805b72f4a26fbdb01348e236d910aa6f631cf9860f3c044127258bfd6947
+size 302

@@ -1,8 +1,3 @@
-Element.classList.add();
-Element.classList.remove();
-Element.onclick=Funcion;
-function f(evt){
-    let divActual=evt.target;
-}//capturar el source del evento
-DOM.tablero.setAttribute('style','loquese');//para agregar un atributo a un elemento.
-//Observar que es a nivel de atributo style del elemento asi que se superpone a cualquier otro css
+version https://git-lfs.github.com/spec/v1
+oid sha256:4eac80bba4c27bd1f026908e3ef1f2a3e95ef680f3d0adeb636ad1d20189e80d
+size 342

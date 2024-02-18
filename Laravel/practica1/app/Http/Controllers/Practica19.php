@@ -1,29 +1,3 @@
-<?php
-
-namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
-
-class Practica19 extends Controller
-{
-    public function listaFicheros()
-    {
-        $carpeta = 'Prueba';
-        $files = Storage::files($carpeta);
-
-        return view('practica19view', compact('files', 'carpeta'));
-    }
-    public function descargar($archivo)
-    {
-        $ruta = storage_path("app/Prueba/" . $archivo);
-        return response()->download($ruta, basename($ruta));
-    }
-    public function eliminar($archivo)
-    {
-        Storage::delete("Prueba/" . $archivo);
-
-        $this->listaFicheros();
-        return redirect("/practica19");
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5cdf3df54abd17fbee9611e0b5766ea783c8becedb4b5686f87434f7fa73e780
+size 679

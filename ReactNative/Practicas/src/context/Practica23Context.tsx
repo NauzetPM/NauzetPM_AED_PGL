@@ -1,27 +1,3 @@
-import { Dispatch, ReactNode, SetStateAction, createContext, useContext, useState } from "react";
-import { TareaProps } from "../components/Tarea";
-import React from 'react';
-
-export interface AppContextType {
-    tareas: TareaProps[];
-    settareas: (pelicula:TareaProps[])=>void;
-}
-export const AppContext = createContext<AppContextType>({} as AppContextType);
-
-export const Practica23Context = (props: {children:ReactNode}) => {
-    const [peliculasfav, setpeliculasfav] = useState<TareaProps[]>([]);
-
-    const contextValues: AppContextType = {
-        tareas: peliculasfav,
-        settareas: setpeliculasfav
-    };
-    return (
-        <AppContext.Provider value={contextValues}>
-            {props.children}
-        </AppContext.Provider>
-    );
-
-}
-export const useAppContext = () => {
-    return useContext(AppContext);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:22213796653f695b6a55b17441e0ab994c31ecd1ef20528a068b010539f14dc8
+size 830

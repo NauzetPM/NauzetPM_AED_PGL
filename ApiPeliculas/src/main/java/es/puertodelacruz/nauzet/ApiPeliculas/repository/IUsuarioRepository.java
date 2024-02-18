@@ -1,16 +1,3 @@
-package es.puertodelacruz.nauzet.ApiPeliculas.repository;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
-import org.springframework.stereotype.Repository;
-
-import es.puertodelacruz.nauzet.ApiPeliculas.entity.Usuario;
-
-
-@Repository
-public interface IUsuarioRepository extends JpaRepository<Usuario, Integer>{
-	@Query("SELECT u from Usuario u where u.nombre=:nombre")
-	public Usuario findByName(@Param("nombre") String nombre);
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:6a8880ef41f6f70704b5699a878b2037f1f8b7ddbba11ded220eb2c5b02e267a
+size 555
